@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <title>Taira Nobuhiko Portfolio-Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
+    <meta name="description" content="AI の研究・PoC 開発に取り組むエンジニア、平 伸彦（Taira Nobuhiko）のポートフォリオサイトです。">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript が動くときだけ、スクロールで現れる動きを有効にする -->
+    <script>document.documentElement.classList.add('js');</script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LES68TYGT9"></script>
     <script>
@@ -16,228 +23,200 @@
     </script>
     <!-- OG設定 -->
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Taira Nobuhiko Portfolio-Site" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tairanobuhiko.github.io/portfolio-site/" />
-    <meta property="og:image" content="https://tairanobuhiko.github.io/portfolio-site/images/og-image.png" />
-    <meta property="og:description" content="Taira Nobuhikoのポートフォリオサイトです" />
-    <meta property="og:site_name" content="Taira Nobuhiko Portfolio-Site" />
+    <meta property="og:title" content="Taira Nobuhiko Portfolio-Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tairanobuhiko.com/">
+    <meta property="og:image" content="https://tairanobuhiko.com/images/og-image.png">
+    <meta property="og:description" content="AI の研究・PoC 開発に取り組むエンジニア、平 伸彦（Taira Nobuhiko）のポートフォリオサイトです。">
+    <meta property="og:site_name" content="Taira Nobuhiko Portfolio-Site">
 
     <!-- X（旧Twitter） Card tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@tairanobuhiko" />
-    <meta name="twitter:title" content="Taira Nobuhiko Portfolio-Site" />
-    <meta name="twitter:description" content="Taira Nobuhikoのポートフォリオサイトです" />
-    <meta name="twitter:image" content="https://tairanobuhiko.github.io/portfolio-site/images/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tairanobuhiko">
+    <meta name="twitter:title" content="Taira Nobuhiko Portfolio-Site">
+    <meta name="twitter:description" content="AI の研究・PoC 開発に取り組むエンジニア、平 伸彦（Taira Nobuhiko）のポートフォリオサイトです。">
+    <meta name="twitter:image" content="https://tairanobuhiko.com/images/og-image.png">
   </head>
   <body>
-    <header id="header" class="header">
-      <div class="header__logo">
-          <h1>
-            <a href="index.html">
-              <!-- 記載番号：1 -->
-              <span class="header__logo-title">Taira Nobuhiko</span>
-              <span class="header__logo-sub">Portfolio</span>
-            </a>
-          </h1>
-        </div>
-        <div class="header__hamburger">
-          <i></i>
-        </div>
-        <nav class="header__gnav">
-          <ul class="header__gnav-list">
-            <li class="header__gnav-item"><a href="#a-profile">PROFILE</a></li>
-            <li class="header__gnav-item"><a href="#a-skill">SKILL</a></li>
-            <li class="header__gnav-item"><a href="#a-works">WORKS</a></li>
-            <li class="header__gnav-item"><a href="mailto:no.215.tyler@gmail.com">CONTACT</a></li>
+    <div class="progress" id="progress"></div>
+
+    <header class="header">
+      <div class="wrap header__inner">
+        <a class="logo" href="#top">TAIRA NOBUHIKO</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"><span></span><span></span></button>
+        <nav class="nav" id="site-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#writing">Writing</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-    </header>
-    <main>
-      <div class="firstview firstview-bg">
-        <div class="firstview__inner">
-          <div class="firstview__main">
-            <div class="firstview__main-pict obj-fit-img">
-              <!-- imagesに配置した、プロフィール画像のパスを記載する -->
-              <img src="./images/profile_image.png" style="border-radius: 50%;">
-            </div>
-            <div class="firstview__info">
-              <h2>
-                <!-- 記載番号：2 -->
-                <span class="firstview__info-name">平 伸彦</span>
-                <!-- 記載番号：3 -->
-                <span class="firstview__info-name-sm">Taira Nobuhiko</span>
-              </h2>
-              <ul class="firstview__info-origin-list">
-                <!-- 記載番号：4 -->
-                <li class="firstview__info-origin-item">1986年08月25日生まれ</li>
-                <!-- 記載番号：5 -->
-                <li class="firstview__info-origin-item">群馬県出身</li>
-              </ul>
-              <ul class="firstview__info-account-list">
-                <li class="firstview__info-account-item">
-                  <!-- 記載番号：6 -->
-                  <a href="https://qiita.com/no215" target="_blank">
-                    <img src="./images/qiita-icon.png" class="firstview__info-account-pict">
-                    <span  class="firstview__info-account-name">Qiita</span>
-                  </a>
-                </li>
-                <li class="firstview__info-account-item">
-                  <!-- 記載番号：7 -->
-                  <a href="https://github.com/tairanobuhiko" target="_blank">
-                    <img src="./images/github-mark.svg" class="firstview__info-account-pict">
-                    <span  class="firstview__info-account-name">github</span>
-                  </a>
-                </li>
-                <li class="firstview__info-account-item">
-                  <!-- 記載番号：8 -->
-                  <a href="https://x.com/tairanobuhiko" target="_blank">
-                    <img src="./images/logo_metaX-3.svg" class="firstview__info-account-pict">
-                    <span  class="firstview__info-account-name">X</span>
-                  </a>
-                </li>
-                <li class="firstview__info-account-item">
-                  <!-- 記載番号：9 -->
-                  <a href="https://zenn.dev/no215" target="_blank">
-                    <img src="./images/logo-only.svg" class="firstview__info-account-pict">
-                    <span  class="firstview__info-account-name">Zenn</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="firstview__point">
-            <div class="firstview__point-heading">
-              <h3>POINT</h3>
-            </div>
-            <ul class="firstview__point-list">
-              <!-- 記載番号：10 -->
-              <li class="firstview__point-item">C#（Blazor）/ Python（FastAPI）/ Azure をベーススタックとした自社開発企業に在職</li>
-              <li class="firstview__point-item">小学生向け学習サポートを目的としたローマ字タイピング習得アプリを個人開発</li>
-              <li class="firstview__point-item">個人開発で工夫した内容を技術ブログで発信中</li>
-            </ul>
-          </div>
-        </div>
       </div>
-      <section id="a-profile" class="profile">
-        <div class="section-inner">
-          <div class="heading">
-            <h2>PROFILE<span>プロフィール</span></h2>
+    </header>
+
+    <main id="top">
+      <!-- 冒頭 -->
+      <section class="hero wrap">
+        <div class="hero__main">
+          <div>
+            <p class="kicker fade">Software Engineer</p>
+            <h1 class="title display"><span class="ln"><span>TAIRA</span></span><span class="ln"><span>NOBUHIKO<em>.</em></span></span></h1>
           </div>
-          <div class="contents">
-            <!-- 記載番号：11 -->
-            <div class="profile__text-area">
-              <p>
-                前職でVBA・GASを活用した情報ポータルツールや自動化ツールの開発など、業務効率化に携わり2022年に社長賞を受賞。<br>
-                自身のアイデアや周りから得たフィードバックを反映し開発したツールで喜んでくれる人がいることが嬉しく、技術をもっと深く学び社内だけではなく世の中に価値を提供できるようなサービスに関わりたいと思うようになっていきました。
-              </p>
-              <p>
-                個人学習に加え、Web開発に必要なスキルを体系的に学びたくプログラミングスクールに通い、2024年にエンジニアへ転職。<br>
-                現在はAIソリューションの SaaS 開発でフロント・バック・インフラの領域に携わっています。
-              </p>
-              <p>
-                10代・20代で音楽制作、映像制作などで培ってきたクリエイティビティとプログラミングスキルを掛け合わせ、人が喜ぶサービスづくりをして世の中に価値を発揮していきたいと考えています。
-              </p>
-            </div>
+          <div class="avatar">
+            <div class="avatar__frame"><img src="images/profile.jpg" alt="平 伸彦のイラスト" width="640" height="640"></div>
+            <svg class="badge" viewBox="0 0 128 128" aria-hidden="true"><defs><path id="badge-circle" d="M64,64 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"></path></defs><circle cx="64" cy="64" r="62" fill="#f4f1ea" stroke="#111" stroke-width="1.5"></circle><text><textPath href="#badge-circle">AI RESEARCH · PoC · RAG · AZURE · </textPath></text><circle cx="64" cy="64" r="9" fill="#ff4d2e"></circle></svg>
+          </div>
+        </div>
+        <div class="hero__foot">
+          <p class="jp-name fade" style="--d:1">平 伸彦<small>群馬県出身</small></p>
+          <p class="lead fade" style="--d:2">マルチクラウドを扱う SIer で、AI の研究・推進と PoC 開発に取り組んでいます。個人開発で工夫したことは Zenn で発信しています。</p>
+          <div class="links fade" style="--d:3">
+            <a class="btn" href="https://github.com/tairanobuhiko" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://zenn.dev/no215" target="_blank" rel="noopener">Zenn</a>
+            <a class="btn" href="https://x.com/tairanobuhiko" target="_blank" rel="noopener">X</a>
           </div>
         </div>
       </section>
-      <section id="a-skill" class="skill">
-        <div class="section-inner">
-          <div class="heading">
-            <h2>SKILL<span>スキル</span></h2>
+
+      <!-- 流れる帯 -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">AI RESEARCH<i>✦</i>PoC<i>✦</i>RAG<i>✦</i>AZURE<i>✦</i>TYPESCRIPT<i>✦</i>REACT<i>✦</i>NEXT.JS<i>✦</i>C#<i>✦</i>PYTHON<i>✦</i>RUBY ON RAILS<i>✦</i>AI RESEARCH<i>✦</i>PoC<i>✦</i>RAG<i>✦</i>AZURE<i>✦</i>TYPESCRIPT<i>✦</i>REACT<i>✦</i>NEXT.JS<i>✦</i>C#<i>✦</i>PYTHON<i>✦</i>RUBY ON RAILS<i>✦</i></div>
+      </div>
+
+      <!-- ABOUT -->
+      <section class="sec wrap" id="about">
+        <div class="sec-head" data-reveal><h2 class="display">ABOUT</h2><span>プロフィール</span><span class="no">01</span></div>
+        <div class="about">
+          <div class="about__big" data-reveal>
+            <p>AI ソリューションの SaaS を開発する企業で、Azure を基盤とした RAG チャットボットアプリの<span class="mark">開発・運用・障害対応・保守を一貫して担当</span>しました。</p>
+            <p>現在はマルチクラウドを扱う SIer 企業で、AI 研究・AI 推進・PoC 開発を行っています。</p>
           </div>
-          <div class="contents">
-            <ul class="skill__list">
-              <!-- 記載番号：12 -->
-              <li class="skill__item">
-                <h3>コーディング</h3>
-                <h4>HTML / CSS / Tailwind CSS</h4>
-                <!-- <p>CSSフレームワーク: Tailwind CSS</p> -->
-              </li>
-              <!-- 記載番号：13 -->
-              <li class="skill__item">
-                <h3>フロントエンド</h3>
-                <h4>JavaScript / jQuery / TypeScript / React</h4>
-              </li>
-              <!-- 記載番号：14 -->
-              <li class="skill__item">
-                <h3>バックエンド</h3>
-                <h4>Ruby（Ruby on Rails）/ C#（ASP.NET Core Blazor）</h4>
-              </li>
-              <!-- 記載番号：15 -->
-              <li class="skill__item">
-                <h3>データベース・インフラ</h3>
-                <h4>MySQL / PostgreSQL / AWS / Render / Azure</h4>
-              </li>
-              <!-- 記載番号：16 -->
-              <li class="skill__item">
-                <h3>その他</h3>
-                <h4>Git / GitHub / Slack / Notion / Figma</h4>
-                <p>
-                  こちらは開発等で使用しているツールです。
-                </p>
-              </li>
-            </ul>
-          </div>
-          <!-- 記載番号：17 -->
-          <div class="skill__text-area">
+          <div data-reveal style="--d:2">
             <p>
-              2023年11月より半年間、プログラミングスクールでRuby on Railsを中心にWebアプリケーション開発に必要な領域を学習しました。現在のスキル感について詳細は以下の制作実績をご覧ください。
-              <br>
-              各領域を比較すると特にサーバーサイドの開発に興味がありますが、ゆくゆくはフルスタック領域でプロジェクトを主導していける PM や PdM など開発をしながらビジネスサイドにも関われるようなプレイングマネージャー領域を目指したいです。
-              <br>
-              現在は自社開発企業にてC#（Blazor）、Python（FastAPI）、AzureをベースとしたAIソリューションの SaaS の開発に取り組んでいます。
+              エンジニアになる前は、VBA・GAS を活用した情報ポータルツールや自動化ツールの開発など、業務効率化に携わり 2022 年に社長賞を受賞。<br>
+              自身のアイデアや周りから得たフィードバックを反映し開発したツールで喜んでくれる人がいることが嬉しく、技術をもっと深く学び社内だけではなく世の中に価値を提供できるようなサービスに関わりたいと思うようになっていきました。
             </p>
+            <p>個人学習に加え、Web 開発に必要なスキルを体系的に学びたくプログラミングスクールに通い、2024 年にエンジニアへ転職しました。</p>
+            <p>10 代・20 代で音楽制作、映像制作などで培ってきたクリエイティビティとプログラミングスキルを掛け合わせ、人が喜ぶサービスづくりをして世の中に価値を発揮していきたいと考えています。</p>
           </div>
         </div>
+        <div class="timeline" data-reveal>
+          <div class="tl" style="--d:0"><b>2022</b><span>業務効率化ツールの開発で<br>社長賞を受賞</span></div>
+          <div class="tl" style="--d:1"><b>2023</b><span>プログラミングスクールで<br>Web 開発を学ぶ</span></div>
+          <div class="tl" style="--d:2"><b>2024</b><span>エンジニアへ転職。<br>RAG チャットボットを担当</span></div>
+          <div class="tl tl--now" style="--d:3"><b>NOW</b><span>SIer で AI 研究・AI 推進・<br>PoC 開発</span></div>
+        </div>
       </section>
-      <section id="a-works" class="works">
-        <div class="section-inner">
-          <div class="heading">
-            <h2>WORKS<span>実績</span></h2>
+
+      <!-- SKILLS -->
+      <section class="sec wrap" id="skills">
+        <div class="sec-head" data-reveal><h2 class="display">SKILLS</h2><span>スキル</span><span class="no">02</span></div>
+        <div class="skill" data-reveal>
+          <h3>AI</h3>
+          <ul class="pills"><li class="pill">RAG（検索拡張生成）</li><li class="pill">生成 AI を使ったアプリ開発</li><li class="pill">PoC 開発</li></ul>
+        </div>
+        <div class="skill" data-reveal>
+          <h3>フロントエンド</h3>
+          <ul class="pills"><li class="pill">HTML</li><li class="pill">CSS</li><li class="pill">Tailwind CSS</li><li class="pill">JavaScript</li><li class="pill">TypeScript</li><li class="pill">React</li><li class="pill">Next.js</li><li class="pill">React Native（Expo）</li></ul>
+        </div>
+        <div class="skill" data-reveal>
+          <h3>バックエンド</h3>
+          <ul class="pills"><li class="pill">C#（ASP.NET Core Blazor）</li><li class="pill">Python（FastAPI）</li><li class="pill">Ruby（Ruby on Rails）</li></ul>
+        </div>
+        <div class="skill" data-reveal>
+          <h3>クラウド・データベース</h3>
+          <ul class="pills"><li class="pill">Azure</li><li class="pill">AWS</li><li class="pill">Vercel</li><li class="pill">Render</li><li class="pill">MySQL</li><li class="pill">PostgreSQL</li></ul>
+        </div>
+        <div class="skill" data-reveal>
+          <h3>ツール</h3>
+          <ul class="pills"><li class="pill">Git</li><li class="pill">GitHub</li><li class="pill">Slack</li><li class="pill">Notion</li><li class="pill">Figma</li></ul>
+        </div>
+      </section>
+
+      <!-- WORKS: 実績を足すときは <a class="work"> から </a> までをコピーして書き換える -->
+      <section class="sec wrap" id="works">
+        <div class="sec-head" data-reveal><h2 class="display">WORKS</h2><span>実績</span><span class="no">03</span></div>
+        <a class="work work--first" href="works/02.html" data-peek-img="images/work/02/app-pc.jpg" data-reveal>
+          <span class="work__no">01</span>
+          <div>
+            <h3>しりとり画像ジェネレーター</h3>
+            <p>ローマ字タイピングの習得を目的とした小学生向けアプリケーションです。</p>
+            <p class="stack">Ruby on Rails / Tailwind CSS / PostgreSQL / Stable Diffusion / OpenAI（DALL-E 3）</p>
           </div>
-          <div class="contents">
-            <ul class="works__list">
-              <li class="works__item">
-                <div class="works__item-pict">
-                  <!-- images/01に配置した、FURIMAの画像（PC版）のパスを記載する -->
-                  <a href="works/01.html" style="background-image:url('./images/work/01/furimaApp_image.png');"></a>
-                </div>
-                <div class="works__item-text-block">
-                  <!-- 記載番号：18 -->
-                  <h3>FURIMA（フリマアプリ）</h3>
-                  <!-- 記載番号：19 -->
-                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Render / Visual Studio Code / draw.io</p>
-                </div>
-                <div class="works__item-btn-block">
-                  <a href="works/01.html" class="button">More</a>
-                </div>
-              </li>
-              <li class="works__item">
-                <div class="works__item-pict">
-                  <!-- images/02に配置した、オリジナルアプリの画像（PC版）のパスを記載する -->
-                  <a href="works/02.html" style="background-image:url('./images/work/02/originalApp_image02.png');"></a>
-                </div>
-                <div class="works__item-text-block">
-                  <!-- 記載番号：20 -->
-                  <h3>しりとり画像ジェネレーター<br>（Word Chain Image Generator）</h3>
-                  <!-- 記載番号：21 -->
-                  <p>Ruby / Ruby on Rails / Tailwind CSS / JavaScript / PostgreSQL / Render / AWS S3 / StableDiffusion / OpenAI(DALL-E3) / Google Apps Script / Twitter API / Tiny_URL / GitHub / GitHub Actions / Figma / draw.io / Cursor / Google Analytics</p>
-                </div>
-                <div class="works__item-btn-block">
-                  <a href="works/02.html" class="button">More</a>
-                </div>
-              </li>
-            </ul>
+          <span class="work__go">詳細を見る<i>→</i></span>
+        </a>
+        <a class="work" href="https://plusone-kk.vercel.app" target="_blank" rel="noopener" data-peek-img="images/work/plusone.jpg" data-reveal>
+          <span class="work__no">02</span>
+          <div>
+            <h3>Plus One 社 コーポレートサイト</h3>
+            <p>住宅リフォーム会社 Plus One 社のコーポレートサイトです。構成の検討からデザイン、実装、公開、更新までを一人で担当しました。</p>
+            <p class="stack">Next.js / TypeScript / MUI / Vercel</p>
+          </div>
+          <span class="work__go">サイトを見る<i>↗</i></span>
+        </a>
+        <a class="work" href="https://github.com/tairanobuhiko/outi-de-beat" target="_blank" rel="noopener" data-peek-label="おうちでBEAT" data-peek-tone="orange" data-reveal>
+          <span class="work__no">03</span>
+          <div>
+            <h3>おうちでBEAT</h3>
+            <p>React Native と Expo で作ったリズムゲームです。譜面と音源のファイルを置くと、ゲーム内の楽曲リストが自動で作られます。</p>
+            <p class="stack">React Native / Expo / TypeScript</p>
+          </div>
+          <span class="work__go">GitHub<i>↗</i></span>
+        </a>
+        <a class="work" href="https://github.com/tairanobuhiko/Tetris" target="_blank" rel="noopener" data-peek-label="Tetris" data-peek-tone="ink" data-reveal>
+          <span class="work__no">04</span>
+          <div>
+            <h3>Tetris</h3>
+            <p>React Native と Expo で作ったテトリスです。スワイプやタップで操作します。</p>
+            <p class="stack">React Native / Expo / TypeScript</p>
+          </div>
+          <span class="work__go">GitHub<i>↗</i></span>
+        </a>
+      </section>
+
+      <!-- WRITING: 記事を足すときは <a class="post"> の 1 行をコピーして書き換える -->
+      <section class="sec wrap" id="writing">
+        <div class="sec-head" data-reveal><h2 class="display">WRITING</h2><span>Zenn の記事</span><span class="no">04</span></div>
+        <div class="posts">
+          <div data-reveal>
+            <h3>NEW <span>新しい記事</span></h3>
+            <a class="post" href="https://zenn.dev/no215/articles/anshin-control-line-notify" target="_blank" rel="noopener"><div><time datetime="2026-11-10">2026.11.10</time><b>楽天モバイル「あんしんコントロール」の見守り通知を、GAS を使って LINE 通知化</b></div><i>↗</i></a>
+            <a class="post" href="https://zenn.dev/no215/articles/terminal-markdown-table-uv-rich" target="_blank" rel="noopener"><div><time datetime="2026-11-09">2026.11.09</time><b>アプリのインストールが制限された 業務PC（Windows） で、Markdown の表をターミナルで見やすくする</b></div><i>↗</i></a>
+            <a class="post" href="https://zenn.dev/no215/articles/claude-code-api-cost-log" target="_blank" rel="noopener"><div><time datetime="2026-11-08">2026.11.08</time><b>サブスク利用でも API 換算コストを把握したい</b></div><i>↗</i></a>
+            <a class="post" href="https://zenn.dev/no215/articles/iterm2-tab-color-by-git-branch" target="_blank" rel="noopener"><div><time datetime="2026-11-07">2026.11.07</time><b>iTerm2のタブ色をgitブランチごとに自動で変える</b></div><i>↗</i></a>
+          </div>
+          <div data-reveal style="--d:2">
+            <h3>POPULAR <span>よく読まれた記事</span></h3>
+            <a class="post" href="https://zenn.dev/no215/articles/d0585982ba1116" target="_blank" rel="noopener"><div><time datetime="2024-08-17">2024.08.17</time><b>【Vercel / Next.js】環境変数設定の注意点アレコレ</b></div><i>↗</i></a>
+            <a class="post" href="https://zenn.dev/no215/articles/331bc656b6d79d" target="_blank" rel="noopener"><div><time datetime="2024-07-06">2024.07.06</time><b>ポートフォリオサイトの公開と公開手順【GitHub Pages】</b></div><i>↗</i></a>
+            <a class="post" href="https://zenn.dev/no215/articles/ff4f1670c080e4" target="_blank" rel="noopener"><div><time datetime="2024-03-15">2024.03.15</time><b>Renderで無料デプロイしたアプリをキープアライブする方法</b></div><i>↗</i></a>
+          </div>
+        </div>
+        <p class="more" data-reveal><a class="btn" href="https://zenn.dev/no215" target="_blank" rel="noopener">Zenn ですべての記事を見る ↗</a></p>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <h2 class="display" data-reveal>CONTACT<em>.</em></h2>
+          <p data-reveal>お仕事のご相談やご連絡は、メールまたは X からお願いします。</p>
+          <div class="links" data-reveal>
+            <a class="btn btn--main" href="mailto:no.215.tyler@gmail.com">メールを送る</a>
+            <a class="btn" href="https://x.com/tairanobuhiko" target="_blank" rel="noopener">X で連絡する</a>
           </div>
         </div>
       </section>
     </main>
-    <!-- 記載番号：1 -->
-    <footer id="footer" class="footer"><p>&copy; Taira Nobuhiko.</p></footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="js/ofi.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+
+    <footer class="footer">
+      <div class="wrap"><span>&copy; Taira Nobuhiko.</span><a href="#top">Back to top ↑</a></div>
+    </footer>
+
+    <div class="peek" id="peek"></div>
+
+    <!-- 読み込めなかったときは、隠していた欄をすべて表示する -->
+    <script src="js/script.js" onerror="document.documentElement.classList.remove('js')"></script>
   </body>
 </html>
