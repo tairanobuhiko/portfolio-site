@@ -1,0 +1,5 @@
+# サイトの URL から見えないようにするもの（設計書、検査、この説明書き）
+exclude:
+  - docs
+  - tests
+  - README.md
